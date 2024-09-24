@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to cart</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .back{
+            background: rgb(216, 211, 211);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-family: "Poppins", sans-serif;
+            height: 100%;
+
+        }
+        .mycard{
+            text-align: center;
+            font-size: 30px;
+            background: rgb(153, 153, 153);
+            width: 500px;
+            margin: 100px;
+            filter: drop-shadow(0 0 10px);
+        }
+        .mycard h3{
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .mycard img{
+            padding-top: 20px;
+            height: 220px;
+        }
+        ul li{
+            font-size: 20px;
+            padding: 0;
+            margin: 0;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+            font-size: 15px;
+            color: white;
+        }
+        .circle_button{
+            border: none;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <div class="mycard">
+            <img src="blue.jpg" id="car_image">
+            <h3>subaru impreza</h3>
+            <ul>
+                <li> <i class='bx bxs-car'></i>Mileage: 4,000miles</li>
+                <li> <i class='bx bxs-gas-pump'></i>Fuel: 25mpg</li>
+                <li> <i class='bx bxs-check-shield'></i>Safety: ⭐⭐⭐⭐⭐</li>
+            
+            </ul>
+            <p>pick a color</p>
+            <button class="circle_button" style="background: blue;" id="blue_btn">.</button>
+            <button class="circle_button" style="background: red;" id="red_btn">.</button>
+            <button class="circle_button" style="background: pink;" id="pink_btn">.</button>
+            <br>
+            <button id="changable">Add to cart</button>
+        </div>
+    </div>
+    <script src="cars.js"></script>
+</body>
+
+</html>
